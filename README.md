@@ -5,7 +5,7 @@ A cloud-deployed task and project management platform built with Java Spring Boo
 ## Features
 
 - Project and task management
-- Role-based access control with OWNER, ADMIN, and MEMBER roles
+- Role-based access control with **OWNER, ADMIN, and MEMBER** roles
 - Project member management
 - Multi-user task assignment
 - Task filtering by assignee
@@ -15,7 +15,8 @@ A cloud-deployed task and project management platform built with Java Spring Boo
 
 ## Tech Stack
 
-**Backend**
+### Backend
+
 - Java 17
 - Spring Boot
 - Spring Security
@@ -23,14 +24,16 @@ A cloud-deployed task and project management platform built with Java Spring Boo
 - PostgreSQL
 - Firebase Admin SDK
 
-**Frontend**
+### Frontend
+
 - React
 - React Router
 - Tailwind CSS
 - Firebase Authentication
 - Vite
 
-**Deployment**
+### Deployment
+
 - Docker
 - Vercel
 - Render
@@ -45,17 +48,22 @@ React Frontend
 Spring Boot REST API
       │
       ├── Spring Security
+      ├── Controller Layer
       ├── Service Layer
-      ├── Repository Layer
-      │
-      ▼
-   PostgreSQL
+      └── Repository Layer
+              │
+              ▼
+          PostgreSQL
 
 Firebase Authentication
       │
       ▼
 Spring Security
-Project Structure
+```
+
+## Project Structure
+
+```text
 nexora/
 ├── backend/
 │   └── user-service/
@@ -76,31 +84,45 @@ nexora/
 │
 ├── docs/
 └── docker-compose.yml
-Live Demo
+```
 
-Frontend: https://nexora-prod.vercel.app
+## Live Demo
 
-Backend API: https://cloudtask-backend.onrender.com/api
+**Frontend:** https://nexora-prod.vercel.app
 
-Running Locally
-Backend
+**Backend API:** https://cloudtask-backend.onrender.com/api
+
+## Running Locally
+
+### Backend
+
+```bash
 cd backend/user-service
 mvn clean install
 mvn spring-boot:run
-Frontend
+```
+
+### Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
-Configure PostgreSQL and Firebase credentials as described in docs/SETUP.md.
+Configure PostgreSQL and Firebase credentials as described in `docs/SETUP.md`.
 
-Testing
+## Testing
+
+```bash
 cd backend/user-service
 mvn test
-License
+```
+
+## License
 
 This project is licensed under the MIT License.
 
-Author
+## Author
 
-Krish Jain
+**Krish Jain**
